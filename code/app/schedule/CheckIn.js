@@ -1,24 +1,13 @@
 module.exports = {
     schedule: {
-        interval: '30s',
+        interval: '30ms',
         type: 'all'
     },
 
     async task() {
-        console.log("定时代码已执行");
-        const result = await ctx.curl('https://httpbin.org/post', {
-            // 必须指定 method
-            method: 'POST',
-            // 通过 contentType 告诉 HttpClient 以 JSON 格式发送
-            contentType: 'json',
-            data: {
-                hello: 'world',
-                now: Date.now(),
-            },
-            // 明确告诉 HttpClient 以 JSON 格式处理返回的响应 body
-            dataType: 'json',
-        });
-        
+        const result = await ctx.curl('https://sctapi.ftqq.com/SCT182258TRszwFQh1XwoZqmol4Utd9Fia.send?title=messagetitle&desp=messagecontent');
+        ctx.status = result.status;
+        ctx.set(result.headers);
         ctx.body = result.data;
     }
 }
