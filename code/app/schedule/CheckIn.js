@@ -5,6 +5,7 @@ module.exports = {
     },
 
     async task() {
+        console.log("定时代码已执行");
         const result = await ctx.curl('https://httpbin.org/post', {
             // 必须指定 method
             method: 'POST',
@@ -17,6 +18,7 @@ module.exports = {
             // 明确告诉 HttpClient 以 JSON 格式处理返回的响应 body
             dataType: 'json',
         });
+        
         ctx.body = result.data;
     }
 }
