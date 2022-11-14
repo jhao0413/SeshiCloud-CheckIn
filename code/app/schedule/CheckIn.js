@@ -1,6 +1,6 @@
 module.exports = {
     schedule: {
-        interval: '30ms',
+        interval: '30s',
         type: 'all'
     },
 
