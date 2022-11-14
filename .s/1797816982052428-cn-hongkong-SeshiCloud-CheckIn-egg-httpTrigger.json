@@ -1,0 +1,25 @@
+{
+  "statefulConfig": {
+    "triggerName": "httpTrigger",
+    "description": "",
+    "triggerId": "57a4fb52-3be6-4b5e-a49e-454cec3455a4",
+    "sourceArn": null,
+    "triggerType": "http",
+    "invocationRole": null,
+    "qualifier": null,
+    "urlInternet": "https://egg-seshicl-checkin-tjzciciwrl.cn-hongkong.fcapp.run",
+    "urlIntranet": "https://egg-seshicl-checkin-tjzciciwrl.cn-hongkong-vpc.fcapp.run",
+    "triggerConfig": {
+      "methods": [
+        "GET"
+      ],
+      "authType": "anonymous",
+      "disableURLInternet": false
+    },
+    "createdTime": "2022-11-14T06:29:32Z",
+    "lastModifiedTime": "2022-11-14T07:50:12Z",
+    "status": null,
+    "targetArn": null,
+    "name": "httpTrigger"
+  }
+}

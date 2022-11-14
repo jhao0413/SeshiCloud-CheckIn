@@ -1,0 +1,32 @@
+{
+  "domainName": "egg.seshicloud-checkin.1797816982052428.cn-hongkong.fc.devsapp.net",
+  "accountId": "1797816982052428",
+  "protocol": "HTTP",
+  "certConfig": {
+    "certName": null,
+    "privateKey": null,
+    "certificate": null
+  },
+  "tlsConfig": {
+    "minVersion": null,
+    "maxVersion": null,
+    "cipherSuites": null
+  },
+  "apiVersion": "2016-08-15",
+  "routeConfig": {
+    "routes": [
+      {
+        "path": "/*",
+        "accountId": null,
+        "serviceName": "SeshiCloud-CheckIn",
+        "functionName": "egg",
+        "qualifier": null,
+        "methods": [
+          "GET"
+        ]
+      }
+    ]
+  },
+  "createdTime": "2022-11-14T06:29:33Z",
+  "lastModifiedTime": "2022-11-14T07:50:14Z"
+}

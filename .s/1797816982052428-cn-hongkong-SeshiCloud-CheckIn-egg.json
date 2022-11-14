@@ -1,0 +1,49 @@
+{
+  "statefulConfig": {
+    "functionId": "e0feb1d4-98cf-4d98-ab13-a3fa54050cb1",
+    "functionName": "egg",
+    "description": "Serverless Devs Web Framework Function",
+    "runtime": "custom",
+    "handler": "index.handler",
+    "timeout": 60,
+    "initializer": "",
+    "initializationTimeout": 3,
+    "codeSize": 8737642,
+    "codeChecksum": "12125180444730951190",
+    "memorySize": 512,
+    "gpuMemorySize": null,
+    "environmentVariables": {},
+    "createdTime": "2022-11-14T06:29:32Z",
+    "lastModifiedTime": "2022-11-14T07:50:11Z",
+    "instanceConcurrency": 1,
+    "instanceSoftConcurrency": null,
+    "customContainerConfig": null,
+    "caPort": 9000,
+    "instanceType": "e1",
+    "layers": null,
+    "layersArnV2": null,
+    "instanceLifecycleConfig": {
+      "preFreeze": {
+        "handler": "",
+        "timeout": 3
+      },
+      "preStop": {
+        "handler": "",
+        "timeout": 3
+      }
+    },
+    "customDNS": null,
+    "customRuntimeConfig": {
+      "command": [
+        "npx",
+        "--no-install",
+        "egg-scripts",
+        "start",
+        "--workers=1"
+      ],
+      "args": null
+    },
+    "customHealthCheckConfig": null,
+    "name": "egg"
+  }
+}
