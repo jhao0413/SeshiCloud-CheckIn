@@ -1,6 +1,6 @@
 module.exports = {
     schedule: {
-        cron: '0 0 24 * * ?',
+        cron: '0 0 10 * * ?',
         type: 'all', 
         immediate: true
     },
