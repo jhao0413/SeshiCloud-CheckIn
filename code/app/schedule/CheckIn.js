@@ -1,8 +1,8 @@
 module.exports = {
     schedule: {
-        cron: '0 0 0 * * ?',
+        cron: '0 15 15 * * ?',
         type: 'all', 
-        immediate: true
+        // immediate: true
     },
     async task(ctx) {
         const result = await ctx.curl('https://alterssc.online/auth/login', {
