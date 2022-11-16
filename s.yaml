@@ -62,10 +62,11 @@ services:
             - start
             - --workers=1
       triggers:
-        - name: httpTrigger
+        - name: timer 
           type: timer
-          cronExpression: '0 30 16 * * ?'
-          enable: true
+          config:
+            cronExpression: '0 36 16 * * ?'    
+            enable: true
       customDomains:
         - domainName: auto
           protocol: HTTP
