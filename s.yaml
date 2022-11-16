@@ -63,11 +63,9 @@ services:
             - --workers=1
       triggers:
         - name: httpTrigger
-          type: http
-          config:
-            authType: anonymous
-            methods:
-              - GET
+          type: timer
+          cronExpression: '0 30 16 * * ?'
+          enable: true
       customDomains:
         - domainName: auto
           protocol: HTTP
