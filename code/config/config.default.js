@@ -16,6 +16,14 @@ module.exports = appInfo => {
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1586592205046_9870';
 
+  config.cluster = {
+    listen: {
+      path: '',
+      port: 9000,
+      hostname: '0.0.0.0',
+    }
+};
+
   // add your middleware config here
   config.middleware = [];
 
